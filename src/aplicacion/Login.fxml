@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="750.0" style="-fx-background-color: #D7F4FC; -fx-border-color: #3b5d91; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplicacion.LoginController">
+   <children>
+      <ImageView fitHeight="308.0" fitWidth="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/logo.png" />
+         </image>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="750.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME:">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usuario">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="35.0" top="35.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="180.0" prefHeight="25.0" prefWidth="750.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD:">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="pass">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="742.0">
+         <children>
+            <Text fx:id="mensaje" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="750.0">
+         <children>
+            <Button fx:id="entrar" mnemonicParsing="false" onAction="#onActionEntrar" onKeyPressed="#onKeyPressedEntrar" prefHeight="38.0" prefWidth="120.0" style="-fx-background-color: #3b5d91; -fx-text-fill: #FFFFFF;" text="ENTRAR">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/login.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="salir" mnemonicParsing="false" onAction="#onActionSalir" onKeyPressed="#onKeyPressedSalir" prefHeight="38.0" prefWidth="120.0" style="-fx-background-color: #3b5d91; -fx-text-fill: #FFFFFF;" text="SALIR">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

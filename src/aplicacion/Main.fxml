@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="750.0" style="-fx-background-color: #D1FFD5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplicacion.MainController">
+   <children>
+      <ImageView fitHeight="166.0" fitWidth="368.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets bottom="30.0" top="20.0" />
+         </VBox.margin>
+         <image>
+            <Image url="@../imagenes/logo.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="260.0" prefWidth="690.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="226.0" prefWidth="215.0">
+               <children>
+                  <Text fill="#007a04" strokeType="OUTSIDE" strokeWidth="0.0" text="Plantas" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="35.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin></Text>
+                  <Button fx:id="botonCrearPlanta" mnemonicParsing="false" onAction="#onActionCrearPlanta" onKeyPressed="#onKeyCrearPlanta" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: #00770A; -fx-text-fill: #FFFFFF;" text="Añadir Planta">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/add_planta.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonBuscarPlanta" mnemonicParsing="false" onAction="#onClickBuscarPlanta" onKeyPressed="#onKeyBuscarPlanta" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: #00770A; -fx-text-fill: #FFFFFF;" text="Buscar Planta">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/search_planta.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonEditarPlanta" layoutX="10.0" layoutY="165.0" mnemonicParsing="false" onAction="#onClickEditarPlanta" onKeyPressed="#onKeyEditarPlanta" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: #00770A; -fx-text-fill: #FFFFFF;" text="Editar Planta">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/edit_planta.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="226.0" prefWidth="215.0">
+               <children>
+                  <Text fill="#3b5d91" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="35.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="botonCrearCliente" mnemonicParsing="false" onAction="#onActionCrearCliente" onKeyPressed="#onKeyCrearCliente" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: #3b5d91; -fx-text-fill: #FFFFFF;" text="Añadir Nuevo Cliente">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/add_cliente.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonBuscarCliente" mnemonicParsing="false" onAction="#onClickBuscarCliente" onKeyPressed="#onKeyBuscarCliente" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: #3b5d91; -fx-text-fill: #FFFFFF;" text="Buscar Cliente">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/search_cliente.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonEditarCliente" layoutX="10.0" layoutY="165.0" mnemonicParsing="false" onAction="#onClickEditarCliente" onKeyPressed="#onKeyEditarCliente" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: #3b5d91; -fx-text-fill: #FFFFFF;" text="Editar Cliente">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/edit_cliente.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="260.0" layoutY="10.0" prefHeight="226.0" prefWidth="215.0">
+               <children>
+                  <Text fill="#007a04" strokeType="OUTSIDE" strokeWidth="0.0" text="Pedidos" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="35.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="botonCrearPedido" mnemonicParsing="false" onAction="#onActionCrearPedido" onKeyPressed="#onKeyCrearPedido" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: #00770A; -fx-text-fill: #FFFFFF;" text="Añadir Nuevo Pedido">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/add_pedido.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonBuscarPedido" mnemonicParsing="false" onAction="#onClickBuscarPedido" onKeyPressed="#onKeyBuscarPedido" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: #00770A; -fx-text-fill: #FFFFFF;" text="Buscar Pedido">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/search_pedido.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonEditarPedido" layoutX="10.0" layoutY="165.0" mnemonicParsing="false" onAction="#onActionEditarPedido" onKeyPressed="#onKeyEditarPedido" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: #00770A; -fx-text-fill: #FFFFFF;" text="Editar Pedido">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/delete_pedido.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="750.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="© Agromarquez S.L" textAlignment="CENTER" translateX="30.0" wrappingWidth="250.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Text>
+            <Button fx:id="exitButton" alignment="CENTER" mnemonicParsing="false" onAction="#onActionExit" onKeyPressed="#onKeyExit" style="-fx-background-color: #FF6060;" translateX="190.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/salir.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="750.0" style="-fx-background-color: #A3E4D7; -fx-border-color: #00770A; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplicacion.EditarClienteController">
+   <children>
+      <Text fill="#00770a" strokeType="OUTSIDE" strokeWidth="0.0" text="Editar Cliente" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="45.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Text>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de la Empresa:" textAlignment="CENTER" wrappingWidth="100.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfCliente" onKeyPressed="#onKeyBuscarEnter" prefHeight="26.0" prefWidth="522.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="botonBuscar" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onActionBuscar" onKeyPressed="#onKeyBuscar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del Cliente:" textAlignment="CENTER" wrappingWidth="100.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfNombre" disable="true">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos del Cliente:" textAlignment="CENTER" wrappingWidth="100.0">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="tfApellidos" disable="true" prefHeight="26.0" prefWidth="255.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono:" textAlignment="CENTER" wrappingWidth="100.0">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="tfTelefono" disable="true">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:" textAlignment="CENTER" wrappingWidth="100.0">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="tfDireccion" disable="true" prefHeight="26.0" prefWidth="255.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="324.0">
+         <children>
+            <Text disable="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo Electrónico:" textAlignment="CENTER" wrappingWidth="100.0">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="tfEmail" disable="true" prefHeight="26.0" prefWidth="557.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="14.0" layoutY="274.0" prefHeight="25.0" prefWidth="592.0">
+         <VBox.margin>
+            <Insets top="75.0" />
+         </VBox.margin>
+         <children>
+            <Button fx:id="botonLimpiar" mnemonicParsing="false" onAction="#onActionLimpiar" onKeyPressed="#onKeyLimpiar" prefHeight="34.0" prefWidth="120.0" style="-fx-background-color: #00770A; -fx-text-fill: #FFFFFF;" text="Limpiar">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/clean.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="275.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="botonGuardar" mnemonicParsing="false" onAction="#onActionGuardar" onKeyPressed="#onKeyGuardar" prefHeight="38.0" prefWidth="185.0" style="-fx-background-color: #00770A; -fx-text-fill: #FFFFFF;" text="Guardar Cambios">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonCancelar" mnemonicParsing="false" onAction="#onActionCancelar" onKeyPressed="#onKeyCancelar" prefHeight="34.0" prefWidth="120.0" style="-fx-background-color: #00770A; -fx-text-fill: #FFFFFF;" text="Salir">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" right="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="15.0" />
+   </padding>
+</VBox>

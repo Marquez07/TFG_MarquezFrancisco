@@ -1,0 +1,5 @@
+/*Direccion donde se ubica el servidor*/
+cd librerias\hsqldb-2.4.1\hsqldb
+
+/*Comando para arrancar el servidor*/
+java -cp lib/hsqldb.jar org.hsqldb.Server -database.0 file:data/DBPlantas -dbname.0 dbPlantas
